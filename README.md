@@ -24,8 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./screenshots/mobile.png" width="375px">
 <img src="./screenshots/desktop.png" min-width="375px">
+<img src="./screenshots/mobile1.png" width="375px">
+<img src="./screenshots/mobile2.png" width="375px">
 
 ### Links
 
