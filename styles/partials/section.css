@@ -1,0 +1,383 @@
+/* SECTION */
+
+.section .section-title {
+  font-size: 2rem;
+  font-family: var(--secondary-font-family);
+  color: var(--very-dark-desaturated-blue);
+
+  font-weight: 900;
+}
+
+.section .section-text {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.section .section-text p {
+  margin: 2rem 0;
+  color: var(--very-dark-grayish-blue);
+  font-weight: 600;
+
+  font-size: 1.125rem;
+}
+
+.section .section-button {
+  position: relative;
+
+  text-transform: uppercase;
+  font-family: var(--secondary-font-family);
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+
+  padding: 0 0.5rem;
+}
+
+.section .section-button::before {
+  content: '';
+  width: 100%;
+  height: 10px;
+
+  border-radius: 1rem;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: -1;
+
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.section .section-button:hover::before {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* HOME SECTION */
+
+#home {
+  background-image: url('../../images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+#home #home-text {
+  text-align: center;
+}
+
+#home #home-text .section-title {
+  font-size: 3rem;
+  width: 100%;
+
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 1.2rem;
+
+  font-family: var(--secondary-font-family);
+}
+
+/* TRANSFORM SECTION */
+#transform .section-image {
+  background-image: url('../../images/mobile/image-transform.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: var(--section-image-height);
+
+  width: 100%;
+}
+
+#transform .section-button::before {
+  background-color: var(--yellow);
+}
+
+/* STAND OUT SECTION */
+#stand-out .section-image {
+  background-image: url('../../images/mobile/image-stand-out.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: var(--section-image-height);
+}
+
+#stand-out .section-button::before {
+  background-color: var(--soft-red);
+}
+
+/* GRAPHIC DESIGN SECTION && PHOTOGRAPHY SECTION*/
+
+#graphic-design {
+  background-image: url('../../images/mobile/image-graphic-design.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 600px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#photography {
+  background-image: url('../../images/mobile/image-photography.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 600px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#graphic-design .section-text p,
+#graphic-design .section-text .section-title {
+  color: var(--dark-desaturated-cyan);
+}
+
+#photography .section-text p,
+#photography .section-text .section-title {
+  color: var(--dark-blue);
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#testimonials .section-title {
+  text-align: center;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  letter-spacing: 5px;
+
+  margin-bottom: 3rem;
+}
+
+#testimonials .testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+#testimonials .testimonial .testimonial-photo img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+#testimonials .testimonial .testimonial-text {
+  margin: 2rem 0;
+}
+
+#testimonials .testimonial .testimonial-text {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+#testimonials .testimonial .testimonial-name {
+  font-family: var(--secondary-font-family);
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 1rem;
+}
+
+#testimonials .testimonial .testimonial-job {
+  color: var(--grayish-blue);
+  font-weight: 600;
+}
+
+/* GALLERY SECTION*/
+#gallery {
+  width: 100%;
+}
+
+#gallery .image-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#gallery .image-group .section-image {
+  height: 188px;
+}
+
+#bottle-milk-image {
+  background-image: url('../../images/mobile/image-gallery-milkbottles.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#orange-image {
+  background-image: url('../../images/mobile/image-gallery-orange.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cone-image {
+  background-image: url('../../images/mobile/image-gallery-cone.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sugar-image {
+  background-image: url('../../images/mobile/image-gallery-sugar-cubes.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* RESPONSIVE SECTIONS */
+@media only screen and (min-width: 530px) {
+  /* HOME */
+  #home {
+    background-image: url('../../images/desktop/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  /* TRANSFORM */
+  #transform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas: 'txt img';
+  }
+
+  #transform .section-image {
+    background-image: url('../../images/desktop/image-transform.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+    grid-area: img;
+  }
+
+  #transform .section-text {
+    text-align: left;
+    padding: 7rem;
+
+    grid-area: txt;
+  }
+
+  /* STAND OUT */
+  #stand-out {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas: 'img txt';
+  }
+
+  #stand-out .section-image {
+    background-image: url('../../images/desktop/image-stand-out.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+    grid-area: img;
+  }
+
+  #stand-out .section-text {
+    text-align: left;
+    padding: 7rem;
+    grid-area: txt;
+  }
+
+  /* GRAPHIC DESIGN & PHOTOGRAPHY*/
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #graphic-design .section-text,
+  #photography .section-text {
+    margin: inherit auto;
+    width: 70%;
+  }
+
+  #graphic-design {
+    background-image: url('../../images/desktop/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #photography {
+    background-image: url('../../images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials {
+    padding: 2rem;
+  }
+
+  #testimonials .testimonials-container {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  /* GALLERY */
+  #gallery .image-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 50vh;
+  }
+
+  #gallery .image-group .section-image {
+    height: 100%;
+  }
+
+  #bottle-milk-image {
+    background-image: url('../../images/desktop/image-gallery-milkbottles.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #orange-image {
+    background-image: url('../../images/desktop/image-gallery-orange.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #cone-image {
+    background-image: url('../../images/desktop/image-gallery-cone.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sugar-image {
+    background-image: url('../../images/desktop/image-gallery-sugarcubes.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
